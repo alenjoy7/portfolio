@@ -1,0 +1,38 @@
+---
+import { cn } from "@/lib/utils";
+const {
+  vertical = false,
+  repeat = 5,
+  pauseOnHover = false,
+  reverse = false,
+  className,
+  ...props
+} = Astro.props;
+---
+
+<div
+  {...props}
+  class={cn(
+    "group relative flex h-full w-full p-2 [--duration:15s] [--gap:20px] lg:[--gap:120px] [gap:var(--gap)]",
+    {
+      "flex-col": vertical,
+      "flex-row": !vertical,
+    },
+    className,
+  )}
+>
+  {
+    Array.from({ length: repeat }).map((_) => (
+      <div
+        class={cn("flex shrink-0 [gap:var(--gap)]", {
+          "group-hover:[animation-play-state:paused]": pauseOnHover,
+          "[animation-direction:reverse]": reverse,
+          "animate-marqueeHorizontal flex-row": !vertical,
+          "animate-marqueeVertical flex-col": vertical,
+        })}
+      >
+        <slot />
+      </div>
+    ))
+  }
+</div>

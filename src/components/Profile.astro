@@ -1,0 +1,44 @@
+---
+import Marquee from "./Marquee.astro";
+import MarqueeContent from "./MarqueeContent.astro";
+import TimeLine from "./TimeLine.astro";
+---
+
+
+<section
+  class="relative bg-gray-700 dark:bg-gray-800 px-10 text-white flex flex-col justify-between"
+>
+  <div class="text-center max-sm:hidden">
+    <h1 class="text-2xl font-semibold text-green-400">ALEN JOY</h1>
+    <p class="text-amber-400 font-bold">Fullstack Developer</p>
+
+    <p class="mt-4 text-white mx-52 text-justify">
+      Hi, I'm a Fullstack Developer with a strong foundation in building scalable web
+      applications. Specializing in Next.js and React, I craft dynamic user
+      interfaces and seamless user experiences. On the backend, I leverage
+      Node.js to develop efficient APIs and server-side logic. My expertise also
+      includes working with SuperTokens for authentication, Tailwind CSS for
+      styling, and Astro for static site generation. Additionally, I have
+      experience with ShadCN UI and Mantine, enhancing my ability to create
+      responsive and visually appealing applications. Passionate about solving
+      complex problems, I constantly strive to improve my skills by exploring
+      new technologies and best practices."
+    </p>
+  </div>
+  <TimeLine />
+
+  <div class="py-4">
+    <p
+      class="text-sm text-center uppercase pb-6 text-purple-300 underline decoration-wavy font-bold"
+    >
+      Known Programming Languages
+    </p>
+    <div class="flex overflow-hidden group mask-side">
+      <Marquee pauseOnHover>
+        <slot>
+          <MarqueeContent />
+        </slot>
+      </Marquee>
+    </div>
+  </div>
+</section>

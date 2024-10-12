@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Dots from "../components/Dots.astro";
+import Profile from "../components/Profile.astro";
+import Landing from "../components/Landing.astro";
+import Dock from "../components/Dock.astro";
+---
+
+<Layout title="Home">
+  <main class="bg-sky-100 dark:bg-slate-700 antialiased">
+    <Dots>
+      <Landing />
+    </Dots>
+    <Profile />
+    <Dock />
+  </main>
+</Layout>
