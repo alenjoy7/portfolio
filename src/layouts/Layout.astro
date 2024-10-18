@@ -1,16 +1,33 @@
 ---
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
+import image from "/src/assets/sololeveling.png";
+const title = "Alen Joy's Portfolio";
+const description = "Alen Joy's portfolio showcasing projects and skills.";
+const url = "https://alenjoy.fun";
+const twitterHandle = "@ALENJOY7z";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Alen Joy's portfolio" />
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="Alen Joy, portfolio, web developer, projects, skills"
+    />
+    <meta name="author" content="Alen Joy" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={image.src} />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="alenjoy.fun" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image.src} />
+    <meta name="twitter:site" content={twitterHandle} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />

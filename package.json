@@ -8,7 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "preinstall": "npx only-allow pnpm",
-    "astro": "astro"
+    "astro": "astro",
+    "bp": "astro build && astro preview"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
