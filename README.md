@@ -1,72 +1,53 @@
-# Astro Starter Kit: Basics
+# Portfolio Website
 
-# My Portfolio
+A modern, responsive portfolio website built with Next.js, showcasing my projects, skills, and experience.
 
-Welcome to my portfolio site! This project is built using Astro, Tailwind CSS, and pnpm.
+## Features
 
-## 🚀 Getting Started
+- ⚡ Fast and optimized with Next.js 15
+- 🎨 Modern UI with responsive design
+- 📱 Mobile-friendly
+- ♿ Accessible
+- 🌙 Dark mode support (if applicable)
+- 📧 Contact form integration
 
-To get started with this project, clone the repository and install the dependencies:
+## Tech Stack
 
-```sh
-git clone https://github.com/yourusername/your-portfolio.git
-cd your-portfolio
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** CSS Modules / Tailwind CSS
+- **Font:** Geist Font Family
+- **Deployment:** Netlify
+
+## Getting Started
+
+First, install the dependencies:
+
+```bash
 pnpm install
 ```
 
-## 🛠️ Development
+Then, run the development server:
 
-To start the development server, run:
-
-```sh
-pnpm run dev
+```bash
+pnpm dev
 ```
 
-This will start the server at `http://localhost:4321`.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📦 Building
+## Project Structure
 
-To build the project for production, run:
-
-```sh
-pnpm run build
+```
+portfolio/
+├── app/              # Next.js app directory
+├── components/       # Reusable components
+├── public/          # Static assets
+└── styles/          # Global styles
 ```
 
-The built files will be in the `dist/` directory.
+## Deployment
 
-## 🔍 Preview
+The site is deployed on [Netlify Platform](https://www.netlify.com/).
 
-To preview the production build locally, run:
+Live site: [url](https://alenjoy.dev/)
 
-```sh
-pnpm run preview
-```
-
-
-## 📚 Learn More
-
-To learn more about Astro and Tailwind CSS, check out the following resources:
-
-- [Astro Documentation](https://docs.astro.build)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-
-## 🤝 Contributing
-
-If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
